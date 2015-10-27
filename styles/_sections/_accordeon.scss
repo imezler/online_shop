@@ -6,6 +6,10 @@
   box-sizing: border-box;
   margin-bottom: 10px;
   display: block;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  color: #333;
+
 }
 .sidebar__availability-header{
   font-family: "open_sanssemibold";
@@ -13,6 +17,7 @@
   color: #333;
   margin-top: 0;
   margin-bottom: 15px;
+  position: relative;
   &:after{
     content: '';
     display: inline-block;
@@ -20,8 +25,8 @@
     height: 11px;
     width: 18px;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 80px;
+    right: 5px;
+    top: 8px;
   }
 }
 .sidebar__availability-list{
@@ -43,25 +48,166 @@
   color: #333;
   position: relative;
   padding-left: 30px;
+  cursor: pointer;
 }
 .sidebar__availability-input{
   position: absolute;
   left: -9999px;
+  top: 0;
 }
 .sidebar__availability-copy{
   display: inline-block;
-  left: 0;
   position: absolute;
-
+  left: 0;
 }
 .sidebar__availability-input + .sidebar__availability-copy{
   height: 19px;
   width: 19px;
-  background: url("/img/icons/checkout.png") no-repeat;
+  background: url('/img/icons/checkout.png') no-repeat;
 }
-
 .sidebar__availability-input:checked + .sidebar__availability-copy{
-  background: url("/img/icons/checkout.png") no-repeat;
+  background: url('/img/icons/checkout.png') no-repeat;
   height: 19px;
   width: 19px;
+}
+.sidebar__brand{
+  @extend .sidebar__availability;
+}
+.sidebar__brand-header{
+  @extend .sidebar__availability-header;
+}
+.sidebar__brand-reset{
+  @extend .sidebar__os-reset;
+}
+.sidebar__brand-list{
+  padding: 0;
+}
+.sidebar__brand-item{
+  list-style: none;
+  margin-bottom: 18px;
+}
+.sidebar__brand-label{
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.sidebar__brand-input{
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.sidebar__brand-copy{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+.sidebar__brand-input + .sidebar__brand-copy{
+  background: url('/img/icons/check-out.png') no-repeat;
+  height: 19px;
+  width: 19px;
+}
+.sidebar__brand-input:checked + .sidebar__brand-copy{
+  background: url('/img/icons/check-in.png') no-repeat;
+  height: 19px;
+  width: 19px;
+}
+
+
+.sidebar__price{
+  @extend .sidebar__availability;
+}
+.sidebar__price-header{
+  @extend .sidebar__availability-header;
+}
+
+
+
+
+.sidebar__color{
+  @extend .sidebar__availability;
+}
+.sidebar__color-header{
+  @extend .sidebar__availability-header;
+}
+.sidebar__color-list{
+  padding: 0;
+  font-size: 0;
+  margin-left: -22px;
+  padding-right: 50px;
+}
+
+.sidebar__color-item{
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 22px 22px;
+}
+.sidebar__color-link{
+  border: 1px solid #dee1e4;
+  background: darkcyan;
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.sidebar__color-link__white{
+  background-color: white;
+}
+.sidebar__color-link__gray{
+  background-color: gray;
+}
+.sidebar__color-link__black{
+  background-color: black;
+}
+.sidebar__color-link__darkgreen{
+  background-color: darkgreen;
+}
+.sidebar__color-link__red{
+  background-color: red;
+}
+.sidebar__color-link__yellow{
+  background-color: yellow;
+}
+.sidebar__color-link__orange{
+  background-color: orange;
+}
+.sidebar__color-link__green{
+  background-color: green;
+}
+.sidebar__color-link__blue{
+  background-color: blue;
+}
+.sidebar__color-link__violet{
+  background-color: violet;
+}
+.sidebar__color-link__pink{
+  background-color: pink;
+}
+.sidebar__color-link__darkred{
+  background-color: darkred;
+}
+.sidebar__os{
+  @extend .sidebar__availability;
+}
+.sidebar__os-header{
+  @extend .sidebar__availability-header;
+}
+.sidebar__os-list{
+  @extend .sidebar__brand-list;
+}
+.sidebar__os-item{
+  @extend .sidebar__brand-item;
+}
+.sidebar__os-label{
+  @extend .sidebar__brand-label;
+}
+.sidebar__os-input{
+  @extend .sidebar__brand-input;
+}
+.sidebar__os-copy{
+  @extend .sidebar__brand-copy;
+}
+.sidebar__os-reset{
+  color: #5db2fc;
+  font: 14px "open_sansregular", sans-serif;
+  text-decoration: underline;
 }

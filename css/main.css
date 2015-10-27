@@ -680,6 +680,10 @@ html, body {
   float: left;
 }
 
+.sidebar__top {
+  margin-bottom: 35px;
+}
+
 .link-panel {
   display: block;
   width: 1100px;
@@ -779,24 +783,28 @@ html, body {
   box-sizing: border-box;
   margin-bottom: 10px;
   display: block;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  color: #333;
 }
 
-.sidebar__availability-header {
+.sidebar__availability-header, .sidebar__brand-header, .sidebar__price-header, .sidebar__color-header, .sidebar__os-header {
   font-family: "open_sanssemibold";
   font-size: 16px;
   color: #333;
   margin-top: 0;
   margin-bottom: 15px;
+  position: relative;
 }
-.sidebar__availability-header:after {
+.sidebar__availability-header:after, .sidebar__brand-header:after, .sidebar__price-header:after, .sidebar__color-header:after, .sidebar__os-header:after {
   content: '';
   display: inline-block;
   background: url("/img/icons/up.png") no-repeat;
   height: 11px;
   width: 18px;
   position: absolute;
-  margin-top: 5px;
-  margin-left: 80px;
+  right: 5px;
+  top: 8px;
 }
 
 .sidebar__availability-list {
@@ -810,7 +818,7 @@ html, body {
   margin-bottom: 18px;
 }
 
-.sidebar__availability {
+.sidebar__availability, .sidebar__brand, .sidebar__price, .sidebar__color, .sidebar__os {
   padding: 10px 30px 20px;
   border-bottom: 1px solid #dee1e4;
 }
@@ -821,17 +829,19 @@ html, body {
   color: #333;
   position: relative;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .sidebar__availability-input {
   position: absolute;
   left: -9999px;
+  top: 0;
 }
 
 .sidebar__availability-copy {
   display: inline-block;
-  left: 0;
   position: absolute;
+  left: 0;
 }
 
 .sidebar__availability-input + .sidebar__availability-copy {
@@ -844,4 +854,119 @@ html, body {
   background: url("/img/icons/checkout.png") no-repeat;
   height: 19px;
   width: 19px;
+}
+
+.sidebar__brand-list, .sidebar__os-list {
+  padding: 0;
+}
+
+.sidebar__brand-item, .sidebar__os-item {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.sidebar__brand-label, .sidebar__os-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.sidebar__brand-input, .sidebar__os-input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.sidebar__brand-copy, .sidebar__os-copy {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.sidebar__brand-input + .sidebar__brand-copy, .sidebar__os-input + .sidebar__brand-copy, .sidebar__brand-input + .sidebar__os-copy, .sidebar__os-input + .sidebar__os-copy {
+  background: url("/img/icons/check-out.png") no-repeat;
+  height: 19px;
+  width: 19px;
+}
+
+.sidebar__brand-input:checked + .sidebar__brand-copy, .sidebar__os-input:checked + .sidebar__brand-copy, .sidebar__brand-input:checked + .sidebar__os-copy, .sidebar__os-input:checked + .sidebar__os-copy {
+  background: url("/img/icons/check-in.png") no-repeat;
+  height: 19px;
+  width: 19px;
+}
+
+.sidebar__color-list {
+  padding: 0;
+  font-size: 0;
+  margin-left: -22px;
+  padding-right: 50px;
+}
+
+.sidebar__color-item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 22px 22px;
+}
+
+.sidebar__color-link {
+  border: 1px solid #dee1e4;
+  background: darkcyan;
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.sidebar__color-link__white {
+  background-color: white;
+}
+
+.sidebar__color-link__gray {
+  background-color: gray;
+}
+
+.sidebar__color-link__black {
+  background-color: black;
+}
+
+.sidebar__color-link__darkgreen {
+  background-color: darkgreen;
+}
+
+.sidebar__color-link__red {
+  background-color: red;
+}
+
+.sidebar__color-link__yellow {
+  background-color: yellow;
+}
+
+.sidebar__color-link__orange {
+  background-color: orange;
+}
+
+.sidebar__color-link__green {
+  background-color: green;
+}
+
+.sidebar__color-link__blue {
+  background-color: blue;
+}
+
+.sidebar__color-link__violet {
+  background-color: violet;
+}
+
+.sidebar__color-link__pink {
+  background-color: pink;
+}
+
+.sidebar__color-link__darkred {
+  background-color: darkred;
+}
+
+.sidebar__os-reset, .sidebar__brand-reset {
+  color: #5db2fc;
+  font: 14px "open_sansregular", sans-serif;
+  text-decoration: underline;
 }
