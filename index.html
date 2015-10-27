@@ -7,6 +7,7 @@
 		<title>Online shop</title>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="fonts/font.css">
+		<link rel="stylesheet" href="bower/jquery-ui/themes/base/slider.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -125,10 +126,17 @@
 							</div>
 							<div class="sidebar__price">
 								<h2 class="sidebar__price-header">Цена</h2>
-								<p class="sidebar__price-fromTo">от</p>
-								<input type="text" name="price" class="sidebar__price-input">
-								<p class="sidebar__price-fromTo">до</p>
-								<input type="text" name="price" class="sidebar__price-input">
+								<div class="sidebar__price-range">
+									<div class="sidebar__price-fields clearfix">
+										<div class="sidebar__price-fields-min"><span class="sidebar__price-fromTo">от</span>
+											<input type="text" value="0" id="min" class="sidebar__price-input">
+										</div>
+										<div class="sidebar__price-fields-max"><span class="sidebar__price-fromTo">до</span>
+											<input type="text" value="50000" id="max" class="sidebar__price-input">
+										</div>
+									</div>
+									<div id="range_slider" class="sidebar__price-slider"><span class="ui-slider-handle ui-state-default ui-corner-all"></span><span class="ui-slider-handle ui-state-default ui-corner-all"></span></div>
+								</div>
 							</div>
 							<div class="sidebar__color">
 								<h2 class="sidebar__color-header">Цвет</h2>
@@ -260,6 +268,8 @@
 				<div class="footer__bottom"><span class="footer__bottom-copywrite">&copy All rights reserved. 2015. no copy allowed</span></div>
 			</footer>
 		</div>
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/jquery-ui/jquery-ui.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

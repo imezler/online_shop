@@ -119,10 +119,30 @@
 .sidebar__price-header{
   @extend .sidebar__availability-header;
 }
+.sidebar__price-fields{
 
-
-
-
+}
+.sidebar__price-input {
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 1px 0 rgba(148, 148, 148, 0.43);
+  display: inline-block;
+  box-sizing: border-box;
+  width: 82px;
+  padding: 6px 8px;
+  margin-left: 15px;
+}
+.sidebar__price-fields-min{
+  float: left;
+}
+.sidebar__price-fields-max{
+  float: right;
+}
+.sidebar__price-slider{
+  margin: 20px 0;
+  background-color: #dee2e5;
+  height: 3px;
+}
 .sidebar__color{
   @extend .sidebar__availability;
 }
