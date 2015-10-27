@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans-light.eot');
+    src: url('opensans-light.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light.woff2') format('woff2'),
+         url('opensans-light.woff') format('woff'),
+         url('opensans-light.ttf') format('truetype'),
+         url('opensans-light.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular.eot');
+    src: url('opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('opensans-regular.woff2') format('woff2'),
+         url('opensans-regular.woff') format('woff'),
+         url('opensans-regular.ttf') format('truetype'),
+         url('opensans-regular.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('opensans-bold.eot');
+    src: url('opensans-bold.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bold.woff2') format('woff2'),
+         url('opensans-bold.woff') format('woff'),
+         url('opensans-bold.ttf') format('truetype'),
+         url('opensans-bold.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('opensans-semibold.eot');
+    src: url('opensans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('opensans-semibold.woff2') format('woff2'),
+         url('opensans-semibold.woff') format('woff'),
+         url('opensans-semibold.ttf') format('truetype'),
+         url('opensans-semibold.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?bvae8n');
+	src:url('../fonts/icomoon.eot?bvae8n#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?bvae8n') format('truetype'),
+	url('../fonts/icomoon.woff?bvae8n') format('woff'),
+	url('../fonts/icomoon.svg?bvae8n#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-location:before {
+	content: "\e900";
+}
+.icon-phone:before {
+	content: "\e901";
+}
+
+
+
+

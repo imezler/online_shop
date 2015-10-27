@@ -1,0 +1,48 @@
+.socials__link_vk {
+  background: url('../../img/icons-s73fb98d177.png') 0 -192px no-repeat;
+  height: 26px;
+  width: 27px;
+}
+
+.socials__link_tw {
+  background: url('../../img/icons-s73fb98d177.png') 0 -96px no-repeat;
+  height: 26px;
+  width: 26px;
+}
+
+.socials__link_fb {
+  background: url('../../img/icons-s73fb98d177.png') 0 0 no-repeat;
+  height: 26px;
+  width: 26px;
+}
+
+.wrapper, .main-container {
+  width: 1256px;
+  margin: 0 auto;
+  border: solid 1px black;
+  display: block;
+}
+
+.main-container {
+  width: 1100px;
+}
+
+.header-top {
+  height: 78px;
+  border: solid 1px black;
+}
+
+.social {
+  list-style: none;
+}
+.social li {
+  display: inline-block;
+}
+.social a {
+  text-decoration: none;
+}
+
+.header__bottom {
+  height: 96px;
+  border: solid 1px black;
+}

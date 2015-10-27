@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'opensans';
+  src: url("opensans-semibold-webfont.eot");
+  src: url("opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-semibold-webfont.woff2") format("woff2"), url("opensans-semibold-webfont.woff") format("woff"), url("opensans-semibold-webfont.ttf") format("truetype"), url("opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("icomoon.eot?bvae8n");
+  src: url("icomoon.eot?bvae8n#iefix") format("embedded-opentype"), url("icomoon.ttf?bvae8n") format("truetype"), url("icomoon.woff?bvae8n") format("woff"), url("icomoon.svg?bvae8n#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

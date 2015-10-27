@@ -1,0 +1,23 @@
+include _common/_nav
+
+
+doctype html
+html(lang="ru-RU")
+   head
+      meta(charset="utf-8")
+      meta(http-equiv="X-UA-Compatible" content="IE = edge")
+      meta(name="viewport" content="width = device-width, initial-scale = 1")
+      title Online shop
+      link(type="text/css" rel="stylesheet" href="css/main.css")
+      link(type="text/css" rel="stylesheet" href="fonts/font.css")
+   body
+      .wrapper
+         include _common/_header
+         +nav('nav', ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника'], 1)
+         .container
+             .main-container.clearfix
+                 include _common/_sidebar
+                 include _common/_content
+             include _common/_text
+         include _common/_footer
+

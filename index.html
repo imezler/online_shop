@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE = edge">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title>Online shop</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css">
+		<link type="text/css" rel="stylesheet" href="fonts/font.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="header__container">
+					<div class="header__top">
+						<div class="header__top-container clearfix">
+							<ul class="social">
+								<li class="social__item"><a href="#" class="social__link social__link_vk"><img src="img/icons/vk.png"></a></li>
+								<li class="social__item"><a href="#" class="social__link social__link_fb"><img src="img/icons/fb.png"></a></li>
+								<li class="social__item"><a href="#" class="social__link social__link_tw"><img src="img/icons/tw.png"></a></li>
+							</ul>
+							<div class="contact clearfix"><span class="icon-location"></span><span class="contact__address">ул.Маяковская 6,офис 17</span><span class="contact__phone">+7(921)123-12-13</span></div>
+						</div>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-container">
+							<div class="logo"><a href="#" class="logo__image"><img src="img/cooltech.png"></a></div>
+							<div class="search">
+								<input type="text" placeholder="Что будем искать?" class="search__input">
+								<button type="submit" class="search__button">Найти</button>
+							</div>
+							<div class="main-links"><a href="#" class="main-links main-links_map">Карта проезда</a><a href="#" class="main-links main-links_order">История заказов</a><a href="#" class="main-links main-links_basket">Корзина</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav">
+				<div class="nav-container">
+					<ul class="nav__list">
+						<li class="nav__item "><a href="#" class="nav__link">Планшеты</a></li>
+						<li class="nav__item nav__item_active"><a href="#" class="nav__link">Мобильные телефоны</a></li>
+						<li class="nav__item "><a href="#" class="nav__link">Mp3 плееры</a></li>
+						<li class="nav__item "><a href="#" class="nav__link">Персональные компьютеры</a></li>
+						<li class="nav__item "><a href="#" class="nav__link">Ноутбуки</a></li>
+						<li class="nav__item "><a href="#" class="nav__link">Аксессуары</a></li>
+						<li class="nav__item "><a href="#" class="nav__link">Бытовая техника</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="main-container clearfix">
+					<div class="sidebar">
+						<div class="sidebar__top">
+							<p class="sidebar__top-info"></p>
+							<p class="sidebar__top-link"></p>
+							<div class="sidebar__top-filter"><span class="sidebar__top-filter-item">Флагманы</span><span class="sidebar__top-filter-item">Бюджетная линейка</span></div>
+						</div>
+						<form class="sidebar__bottom">
+							<div class="sidebar__availability">
+								<h2 class="sidebar__availability-header">Наличие в магазинах</h2>
+								<div class="sidebar__availability">
+									<label class="sidebar__availability-label">Во всех магазинах
+										<input type="radio" name="availability" class="sidebar__availability-input">
+									</label>
+									<label class="sidebar__availability-label">В ближайшем ко мне магазине
+										<input type="radio" name="availability" class="sidebar__availability-input">
+									</label>
+								</div>
+							</div>
+							<div class="sidebar__brand">
+								<h2 class="sidebar__brand-header">Бренды</h2>
+								<label class="sidebar__brand-checkbox">Lenovo
+									<input type="checkbox" name="brand" class="sidebar__brand-input">
+								</label>
+								<label class="sidebar__brand-checkbox">Apple
+									<input type="checkbox" name="brand" class="sidebar__brand-input">
+								</label>
+								<label class="sidebar__brand-checkbox">Samsung
+									<input type="checkbox" name="brand" class="sidebar__brand-input">
+								</label>
+								<label class="sidebar__brand-checkbox">Asus
+									<input type="checkbox" name="brand" class="sidebar__brand-input">
+								</label>
+								<label class="sidebar__brand-checkbox">Motorola
+									<input type="checkbox" name="brand" class="sidebar__brand-input">
+								</label><a href="#" class="sidebar__brand-reset">Сбросить фильтр</a>
+							</div>
+							<div class="sidebar__price">
+								<h2 class="sidebar__price-header">Цена</h2>
+								<p class="sidebar__price-fromTo">от</p>
+								<input type="text" name="price" class="sidebar__price-input">
+								<p class="sidebar__price-fromTo">до</p>
+								<input type="text" name="price" class="sidebar__price-input">
+							</div>
+							<div class="sidebar__color">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+								<input type="checkbox" name="colorbox" class="sidebar__color-box">
+							</div>
+							<div class="sidebar__os">
+								<h2 class="sidebar__os-header">Бренды</h2>
+								<label class="sidebar__os-checkbox">Android
+									<input type="checkbox" name="os" class="sidebar__os-input">
+								</label>
+								<label class="sidebar__os-checkbox">iOS
+									<input type="checkbox" name="os" class="sidebar__os-input">
+								</label>
+								<label class="sidebar__os-checkbox">Windows Mobile
+									<input type="checkbox" name="os" class="sidebar__os-input">
+								</label>
+								<label class="sidebar__os-checkbox">Symbian
+									<input type="checkbox" name="os" class="sidebar__os-input">
+								</label>
+								<label class="sidebar__os-checkbox">Custom
+									<input type="checkbox" name="os" class="sidebar__os-input">
+								</label><a href="#" class="sidebar__os-reset">Сбросить фильтр</a>
+							</div>
+						</form>
+					</div>
+					<div class="main-content">
+						<div class="main-content__top"><span class="main-content__top-sort">Сортировать по</span>
+							<div class="main-content__top-dropdown">
+								<ul class="main-content__top-list">
+									<li class="main-content__top-item">по цене</li>
+									<li class="main-content__top-item">по популярности</li>
+									<li class="main-content__top-item">по рейтингу</li>
+								</ul>
+							</div><span class="main-content__top-view">Вид каталога
+								<ul class="main-content__top-view-list">
+									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 1</a></li>
+									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 2</a></li>
+									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 3</a></li>
+								</ul></span>
+						</div>
+						<div class="main-content__bottom">
+							<ul class="main-content__bottom-list">
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 1</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 2</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 3</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 4</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 5</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 6</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 7</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 8</a></li>
+								<li class="main-content__bottom-item"><a href="#" class="main-content__bottom-link">Phone 9</a></li>
+							</ul>
+						</div>
+						<div class="main-content__paginator">
+							<ul class="main-content__paginator-list">
+								<li class="main-content__paginator-item"><a href="#" class="main-content__paginator-link">Back</a></li>
+								<li class="main-content__paginator-item"><a href="#" class="main-content__paginator-link">1</a></li>
+								<li class="main-content__paginator-item"><a href="#" class="main-content__paginator-link">2</a></li>
+								<li class="main-content__paginator-item"><a href="#" class="main-content__paginator-link">3</a></li>
+								<li class="main-content__paginator-item"><a href="#" class="main-content__paginator-link">Next</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-text">
+					<h2 class="bottom-text__header">Важная информация</h2>
+					<div class="bottom-text__column">
+						<p class="bottom-text__parag">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p class="bottom-text__parag">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+						<p class="bottom-text__parag">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+						<p class="bottom-text__parag">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p class="bottom-text__parag">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+						<p class="bottom-text__parag">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="footer__top clearfix">
+					<div class="footer__left"><a href="#" class="logo__footer"><img src="img/cooltech2.png"></a></div>
+					<div class="footer__right">
+						<div class="footer__right-social">
+							<ul class="footer__right-social-list">
+								<li class="footer__right-social-item"><a href="#" class="footer__right-social-link footer__right-social-link_vk"><img src="img/icons/vk.png"></a></li>
+								<li class="footer__right-social-item"><a href="#" class="footer__right-social-link footer__right-social-link_fb"><img src="img/icons/fb.png"></a></li>
+								<li class="footer__right-social-item"><a href="#" class="footer__right-social-link footer__right-social-link_tw"><img src="img/icons/tw.png"></a></li>
+							</ul>
+						</div>
+						<div class="footer__right-nav">
+										<nav class="footer-nav">
+											<div class="nav-container">
+												<ul class="footer-nav__list">
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Планшеты</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Мобильные телефоны</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Mp3 плееры</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Персональные компьютеры</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Ноутбуки</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Аксессуары</a></li>
+													<li class="footer-nav__item "><a href="#" class="footer-nav__link">Бытовая техника</a></li>
+												</ul>
+											</div>
+										</nav>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom"><span class="footer__bottom-copywrite">&copy All rights reserved. 2015. no copy allowed</span></div>
+			</footer>
+		</div>
+	</body>
+</html>

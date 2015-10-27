@@ -1,0 +1,124 @@
+//@mixin get-sprite ($map, $icon) {
+//  $sprite-image: sprite-file($map, $icon);
+//  $sprite-map: sprite-url($map);
+//  $sprite-position: sprite-position($map, $icon);
+//
+//  background: $sprite-map $sprite-position no-repeat;
+//
+//  $sprite-height: image-height($sprite-image);
+//  $sprite-width: image-width($sprite-image);
+//
+//  height: $sprite-height;
+//  width: $sprite-width;
+//}
+$socials: vk, fb, tw;
+//$socials-map: sprite-map('icons/*.png', $spacing: 70px);
+//$icons-layout: horizontal;
+//
+//@each $social in $socials {
+//  .socials__link_#{$social} {
+//    @include get-sprite($socials-map, $social);
+//  }
+//}
+
+$border: solid 1px black;
+body{
+  background: #f4f4f4;
+}
+.wrapper{
+  display: block;
+}
+
+.header{
+  height: 173px;
+
+}
+//.header__container{
+//  width: 1100px;
+//  display: block;
+//  margin: 0 auto;
+//}
+
+.header__top{
+  height: 78px;
+  background: #fff;
+  border-bottom: 2px solid #ebedef;
+  display: block;
+  margin: 0 auto;
+}
+.header__top-container{
+  width: 1100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+
+}
+.social{
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+
+
+      li{
+        display: inline-block;
+      }
+      a{
+        text-decoration: none;
+      }
+}
+.social__item{
+  display: block;
+  margin-left: 15px;
+
+}
+.contact{
+  float: right;
+        .contact__address{
+        font-family: "open_sansregular";
+        font-size: 14px;
+      }
+      .contact__phone{
+        font-family: "open_sanssemibold";
+        font-size: 18px;
+        margin-left: 106px;
+      }
+
+}
+.clearfix{
+  @include clearfix;
+}
+
+
+.header__bottom{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header__bottom-container{
+  width: 1100px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.logo{
+  display: inline-block;
+  vertical-align: middle;
+}
+.search{
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-links{
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "OSS";
+}
+
+
+.container{
+  margin: 0 auto;
+  display: block;
+  width: 1100px;
+}
