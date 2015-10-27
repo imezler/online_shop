@@ -54,24 +54,39 @@
 				</div>
 			</nav>
 			<div class="container">
+				<div class="link-panel">
+					<ul class="link-panel__list">
+						<li class="link-panel__item"><a href="#" class="link-panel__link">Главная</a></li>
+						<li class="link-panel__item"><a href="#" class="link-panel__link">Каталог</a></li>
+					</ul>
+				</div>
 				<div class="main-container clearfix">
 					<div class="sidebar">
 						<div class="sidebar__top">
-							<p class="sidebar__top-info"></p>
-							<p class="sidebar__top-link"></p>
-							<div class="sidebar__top-filter"><span class="sidebar__top-filter-item">Флагманы</span><span class="sidebar__top-filter-item">Бюджетная линейка</span></div>
+							<div class="sidebar__top-filter">
+								<ul class="sidebar__list">
+									<li class="sidebar__item"><a href="#" class="sidebar__link">Флагманы</a></li>
+									<li class="sidebar__item"><a href="#" class="sidebar__link">Бюджетная линейка</a></li>
+								</ul>
+							</div>
 						</div>
-						<form class="sidebar__bottom">
+						<form class="sidebar__accordeon">
 							<div class="sidebar__availability">
 								<h2 class="sidebar__availability-header">Наличие в магазинах</h2>
-								<div class="sidebar__availability">
-									<label class="sidebar__availability-label">Во всех магазинах
-										<input type="radio" name="availability" class="sidebar__availability-input">
-									</label>
-									<label class="sidebar__availability-label">В ближайшем ко мне магазине
-										<input type="radio" name="availability" class="sidebar__availability-input">
-									</label>
-								</div>
+								<ul class="sidebar__availability-list">
+									<li class="sidebar__availability-item">
+										<label class="sidebar__availability-label">Во всех магазинах
+											<input type="radio" name="availability" class="sidebar__availability-input">
+											<div class="sidebar__availability-copy"></div>
+										</label>
+									</li>
+									<li class="sidebar__availability-item">
+										<label class="sidebar__availability-label">В ближайшем ко мне магазине
+											<input type="radio" name="availability" class="sidebar__availability-input">
+											<div class="sidebar__availability-copy"></div>
+										</label>
+									</li>
+								</ul>
 							</div>
 							<div class="sidebar__brand">
 								<h2 class="sidebar__brand-header">Бренды</h2>
@@ -214,5 +229,6 @@
 				<div class="footer__bottom"><span class="footer__bottom-copywrite">&copy All rights reserved. 2015. no copy allowed</span></div>
 			</footer>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

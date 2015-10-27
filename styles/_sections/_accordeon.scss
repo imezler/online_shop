@@ -1,0 +1,67 @@
+.sidebar__accordeon{
+  border: 1px solid #dee1e4;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fbfbfb;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: block;
+}
+.sidebar__availability-header{
+  font-family: "open_sanssemibold";
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 15px;
+  &:after{
+    content: '';
+    display: inline-block;
+    background: url('/img/icons/up.png') no-repeat;
+    height: 11px;
+    width: 18px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 80px;
+  }
+}
+.sidebar__availability-list{
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar__availability-item{
+  margin-bottom: 18px;
+}
+.sidebar__availability{
+  padding: 10px 30px 20px;
+  border-bottom: 1px solid #dee1e4;
+}
+.sidebar__availability-label{
+  font-family: "open_sansregular";
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  padding-left: 30px;
+}
+.sidebar__availability-input{
+  position: absolute;
+  left: -9999px;
+}
+.sidebar__availability-copy{
+  display: inline-block;
+  left: 0;
+  position: absolute;
+
+}
+.sidebar__availability-input + .sidebar__availability-copy{
+  height: 19px;
+  width: 19px;
+  background: url("/img/icons/checkout.png") no-repeat;
+}
+
+.sidebar__availability-input:checked + .sidebar__availability-copy{
+  background: url("/img/icons/checkout.png") no-repeat;
+  height: 19px;
+  width: 19px;
+}
