@@ -22,22 +22,22 @@ $socials: vk, fb, tw;
 //}
 
 $border: solid 1px black;
-body{
+html, body{
   background: #f4f4f4;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
 }
 .wrapper{
   display: block;
+  min-width: 1100px;
+
 }
 
 .header{
   height: 173px;
 
 }
-//.header__container{
-//  width: 1100px;
-//  display: block;
-//  margin: 0 auto;
-//}
 
 .header__top{
   height: 78px;
@@ -58,8 +58,6 @@ body{
   padding: 0;
   float: left;
   list-style: none;
-
-
       li{
         display: inline-block;
       }
@@ -91,31 +89,72 @@ body{
 
 
 .header__bottom{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.header__bottom-container{
-  width: 1100px;
-  display: block;
-  margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 16px;
 }
+.header__bottom-container{
+  width: 1100px;
+  margin: 0 auto;
+
+}
 .logo{
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
 }
 .search{
-  display: inline-block;
-  vertical-align: middle;
+  float: right;
+  font-size: 0;
+    .search__input{
+      color: #7f7f7f;
+      height: 35px;
+      width: 288px;
+      font: 14px "open_sanslight", sans-serif;
+      padding: 10px 17px 10px;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+      background: #fbfbfb;
+      border: 1px solid #dee1e4;
+      border-right: none;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    .search__button{
+      display: inline-block;
+      vertical-align: top;
+      height: 35px;
+      width: 79px;
+      box-sizing: border-box;
+      color: #fff;
+      border: none;
+      background: #ff6d30;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      font: 16px "open_sanssemibold";
+    }
 }
 .main-links{
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "OSS";
+  float: right;
+  margin-top: 10px;
+  margin-left: 15px;
 }
-
+.main-links__list{
+  margin: 0;
+  padding: 0;
+}
+.main-links__item{
+  display: inline-block;
+  margin-left: 32px;
+}
+.main-links__link{
+  font-family: "open_sanssemibold";
+  font-size: 16px;
+  text-decoration: underline;
+  color: #333;
+  display: block;
+  &:hover{
+    color: #ff6600;
+  }
+}
 
 .container{
   margin: 0 auto;
