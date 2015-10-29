@@ -34,6 +34,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 .sidebar__availability-item{
   margin-bottom: 18px;
@@ -43,6 +44,7 @@
   border-bottom: 1px solid #dee1e4;
 }
 .sidebar__availability-label{
+  display: block;
   font-family: "open_sansregular";
   font-size: 14px;
   color: #333;
@@ -50,25 +52,39 @@
   padding-left: 30px;
   cursor: pointer;
 }
-.sidebar__availability-input{
+
+.sidebar__availability-elem{
+  border: 3px solid #dee1e4;
   position: absolute;
+  width: 13px;
+  height: 13px;
+  @include border-radius(50%);
+  @include transition(border-color .3s);
+  @include inlineblock;
+  left: 0;
+
+  &:after{
+      content: "";
+      @include absolute-center;
+      width: 0;
+      height: 0;
+      @include border-radius(50%);
+      background: #ff6d30;
+      @include transition( .3s);
+  }
+}
+.sidebar__availability-input{
+  position: relative;
   left: -9999px;
   top: 0;
 }
-.sidebar__availability-copy{
-  display: inline-block;
-  position: absolute;
-  left: 0;
-}
-.sidebar__availability-input + .sidebar__availability-copy{
-  height: 19px;
-  width: 19px;
-  background: url('/img/icons/checkout.png') no-repeat;
-}
-.sidebar__availability-input:checked + .sidebar__availability-copy{
-  background: url('/img/icons/checkout.png') no-repeat;
-  height: 19px;
-  width: 19px;
+.sidebar__availability-input:checked + .sidebar__availability-elem{
+  border-color: #ff6d30;
+
+  &:after{
+    width: 9px;
+    height: 9px;
+  }
 }
 .sidebar__brand{
   @extend .sidebar__availability;

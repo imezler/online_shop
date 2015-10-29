@@ -829,6 +829,7 @@ html, body {
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .sidebar__availability-item {
@@ -841,6 +842,7 @@ html, body {
 }
 
 .sidebar__availability-label {
+  display: block;
   font-family: "open_sansregular";
   font-size: 14px;
   color: #333;
@@ -849,28 +851,62 @@ html, body {
   cursor: pointer;
 }
 
-.sidebar__availability-input {
+.sidebar__availability-elem {
+  border: 3px solid #dee1e4;
   position: absolute;
+  width: 13px;
+  height: 13px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  -ms-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+}
+.sidebar__availability-elem:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #ff6d30;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar__availability-input {
+  position: relative;
   left: -9999px;
   top: 0;
 }
 
-.sidebar__availability-copy {
-  display: inline-block;
-  position: absolute;
-  left: 0;
+.sidebar__availability-input:checked + .sidebar__availability-elem {
+  border-color: #ff6d30;
 }
-
-.sidebar__availability-input + .sidebar__availability-copy {
-  height: 19px;
-  width: 19px;
-  background: url("/img/icons/checkout.png") no-repeat;
-}
-
-.sidebar__availability-input:checked + .sidebar__availability-copy {
-  background: url("/img/icons/checkout.png") no-repeat;
-  height: 19px;
-  width: 19px;
+.sidebar__availability-input:checked + .sidebar__availability-elem:after {
+  width: 9px;
+  height: 9px;
 }
 
 .sidebar__brand-list, .sidebar__os-list {
