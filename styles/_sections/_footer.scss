@@ -25,7 +25,7 @@ $foot-map: sprite-map('icons/foot/*.png', $spacing: 70px);
 
 
 .socials_footer{
-  margin-bottom: 21px;
+  margin-bottom: 16px;
   float: right;
 
   .socials__link{
@@ -45,6 +45,13 @@ $foot-map: sprite-map('icons/foot/*.png', $spacing: 70px);
           @include get-sprite($foot-map, $item);
           content: '';
           @include absolute-center2;
+        }
+
+        &:hover {
+          &:after{
+            $icon-name: $item + '-hover';
+            @include get-sprite($foot-map, $icon-name);
+          }
 
         }
       }
@@ -65,6 +72,7 @@ $foot-map: sprite-map('icons/foot/*.png', $spacing: 70px);
   width: 600px;
   margin: 15px -20px;
   padding: 0;
+  margin-bottom: 0;
 }
 .footer-nav__link{
   font-family: "open_sansregular";
@@ -78,7 +86,7 @@ $foot-map: sprite-map('icons/foot/*.png', $spacing: 70px);
 }
 .footer-nav__item{
   display: inline-block;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .footer__bottom-copywrite{

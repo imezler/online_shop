@@ -5,6 +5,12 @@ $socials-map: sprite-map('icons/social/*.png', $spacing: 70px);
   .social__item_#{$social} {
     .social_icon{
       @include get-sprite($socials-map, $social);
+
+      &:hover {
+        $icon-name: $social + '-hover';
+        @include get-sprite($socials-map, $icon-name);
+
+      }
     }
   }
 }

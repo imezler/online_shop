@@ -1,14 +1,83 @@
-.content-title{
-  color: #333;
-  text-align: left;
-  margin: 0;
-  font: 20px/1 "open_sansbold", sans-serif;
-  margin-bottom: 31px;
-}
+
 .main-content{
   width:740px;
   display: block;
   float: right;
 }
 
+.main-content__top{
+  background: #e4ebee;
+  @include clearfix;
+  border: 1px solid #dee1e4;
+  @include border-radius(5px);
+  margin-bottom: 21px;
+}
+.main-content__sort{
+  font-size: 14px;
+  line-height: 16px;
+  color: #5d656c;
+  @include inlineblock;
+  margin-right: 11px;
+}
+.main-content__select{
+  @include inlineblock;
+}
+.main-content__top-left{
+  float: left;
+  width: 40%;
+  line-height: 51px;
+  margin-left: 20px;
+}
+.main-content__top-right{
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+.main-content__title{
+  line-height: 51px;
+  color: #5d656c;
+  font: 14px/20px "open_sansregular";
+}
 
+.main-content__view{
+  @include inlineblock;
+}
+.main-content__view-list{
+  @include clearfix;
+  list-style: none;
+  margin: 0;
+}
+.main-content__view-item{
+  float: left;
+  border: 1px solid #dee1e4;
+}
+.main-content__view-link{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  outline: none !important;
+}
+.main-content__view-icon{
+  @include absolute-center;
+}
+
+
+$view-map: sprite-map('icons/view/*.png', $spacing: 70px);
+$items: rows, grids, lines;
+
+@each $item in $items {
+  .main-content__view-item_#{$item} {
+    .main-content__view-icon {
+        @include get-sprite($view-map, $item);
+    }
+
+    &:hover {
+      $hover-icon: $item + '-hover';
+
+      .main-content__view-icon{
+        @include get-sprite($view-map, $hover-icon);
+      }
+    }
+  }
+}

@@ -197,19 +197,26 @@
 						</form>
 					</div>
 					<div class="main-content">
-						<div class="main-content__top"><span class="main-content__top-sort">Сортировать по</span>
-							<div class="main-content__top-dropdown">
-								<ul class="main-content__top-list">
-									<li class="main-content__top-item">по цене</li>
-									<li class="main-content__top-item">по популярности</li>
-									<li class="main-content__top-item">по рейтингу</li>
-								</ul>
-							</div><span class="main-content__top-view">Вид каталога
-								<ul class="main-content__top-view-list">
-									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 1</a></li>
-									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 2</a></li>
-									<li class="main-content__top-view-item"><a href="#" class="main-content__top-view-link">view 3</a></li>
-								</ul></span>
+						<div class="main-content__top">
+							<div class="main-content__top-left">
+								<div class="main-content__sort">Сортировать по</div>
+								<select class="main-content__select">
+									<option value="">по цене</option>
+									<option value="">по популярности</option>
+								</select>
+							</div>
+							<div class="main-content__top-right"><span class="main-content__title">Вид каталога</span>
+								<div class="main-content__view">
+									<ul class="main-content__view-list">
+										<li data-view="rows" class="main-content__view-item main-content__view-item_rows"><a href="#" class="main-content__view-link">
+												<div class="main-content__view-icon"></div></a></li>
+										<li data-view="grids" class="main-content__view-item main-content__view-item_grids"><a href="#" class="main-content__view-link">
+												<div class="main-content__view-icon"></div></a></li>
+										<li data-view="lines" class="main-content__view-item main-content__view-item_lines"><a href="#" class="main-content__view-link">
+												<div class="main-content__view-icon"></div></a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div class="main-content__bottom">
 							<ul class="main-content__bottom-list">
