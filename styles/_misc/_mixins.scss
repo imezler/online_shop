@@ -67,14 +67,19 @@
 	background-image:         linear-gradient(to bottom, $top-color, $bottom-color); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
 }
-@mixin absolute-center{
-  top:0;
+@mixin absolute-center {
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
   position: absolute;
 }
+ @mixin absolute-center2 {
+   margin: auto;
+   position: absolute;
+ }
+
 @mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
   $sprite-image: sprite-file($map, $sprite);
   $sprite-map: sprite-url($map);

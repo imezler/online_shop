@@ -652,19 +652,49 @@ html, body {
   padding-top: 70px;
 }
 
-.footer__right-social-list {
-  list-style: none;
-  text-align: right;
+.logo__footer {
+  max-width: 255px;
 }
 
-.footer__right-social-item {
-  display: inline-block;
-  right: 83px;
+.footer__right-social {
+  padding-top: 30px;
+}
+
+.socials_footer {
+  margin-bottom: 21px;
+  float: right;
+}
+.socials_footer .socials__link {
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+.socials_footer .socials__item {
   margin-left: 25px;
 }
-
-.footer__right-social__link {
-  text-decoration: none;
+.socials_footer .socials__item_fb .socials__link:after {
+  background: url('../img/icons/foot-s9755ff4bab.png') 0 -113px no-repeat;
+  height: 43px;
+  width: 43px;
+  content: '';
+  margin: auto;
+  position: absolute;
+}
+.socials_footer .socials__item_vk .socials__link:after {
+  background: url('../img/icons/foot-s9755ff4bab.png') 0 -565px no-repeat;
+  height: 43px;
+  width: 43px;
+  content: '';
+  margin: auto;
+  position: absolute;
+}
+.socials_footer .socials__item_tw .socials__link:after {
+  background: url('../img/icons/foot-s9755ff4bab.png') 0 -339px no-repeat;
+  height: 43px;
+  width: 43px;
+  content: '';
+  margin: auto;
+  position: absolute;
 }
 
 .footer__right {
@@ -672,13 +702,14 @@ html, body {
 }
 
 .footer__right-nav {
-  width: 635px;
+  margin-right: 21px;
 }
 
 .footer-nav__list {
   text-align: right;
   width: 600px;
-  margin-right: 0;
+  margin: 15px -20px;
+  padding: 0;
 }
 
 .footer-nav__link {

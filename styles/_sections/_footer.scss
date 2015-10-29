@@ -3,8 +3,6 @@
   height: 220px;
   display: block;
   background: url("/img/footbg.png");
-
-
 }
 .footer__top{
   margin: 0 auto;
@@ -15,33 +13,58 @@
 .footer__left{
   float: left;
   padding-top: 70px;
+}
+.logo__footer{
+  max-width: 255px;
+}
+.footer__right-social{
+  padding-top: 30px;
 
 }
+$foot-map: sprite-map('icons/foot/*.png', $spacing: 70px);
 
-.footer__right-social-list{
-  list-style:none;
-  text-align: right;
 
+.socials_footer{
+  margin-bottom: 21px;
+  float: right;
+
+  .socials__link{
+    width: 45px;
+    height: 45px;
+    display: block;
+  }
+  .socials__item{
+    margin-left: 25px;
+  }
+  $items: fb, vk, tw;
+
+  @each $item in $items {
+    .socials__item_#{$item} {
+      .socials__link{
+        &:after{
+          @include get-sprite($foot-map, $item);
+          content: '';
+          @include absolute-center2;
+
+        }
+      }
+    }
+  }
 }
-.footer__right-social-item{
-  display: inline-block;
-  right: 83px;
-  margin-left: 25px;
-}
-.footer__right-social__link{
-  text-decoration: none;
-}
+
+
 
 .footer__right{
   float: right;
 }
 .footer__right-nav{
-  width: 635px;
+  margin-right: 21px;
 }
 .footer-nav__list{
   text-align: right;
   width: 600px;
-  margin-right: 0;
+  margin: 15px -20px;
+  padding: 0;
 }
 .footer-nav__link{
   font-family: "open_sansregular";
@@ -66,7 +89,6 @@
   text-align: center;
   color: #ffffff;
   border-top: solid 1px #494949;
-
 }
 
 .clearfix {
@@ -78,7 +100,4 @@
   &:after {
     clear: both;
   }
-}
-.nav-container{
-
 }
