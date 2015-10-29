@@ -3,7 +3,7 @@
   height: 220px;
   display: block;
   background: url("/img/footbg.png");
-  min-width: 1100px;
+
 
 }
 .footer__top{
@@ -30,7 +30,6 @@
 }
 .footer__right-social__link{
   text-decoration: none;
-
 }
 
 .footer__right{
@@ -42,6 +41,7 @@
 .footer-nav__list{
   text-align: right;
   width: 600px;
+  margin-right: 0;
 }
 .footer-nav__link{
   font-family: "open_sansregular";
@@ -52,14 +52,11 @@
   &:hover{
     color: #ff6600;
   }
-
 }
 .footer-nav__item{
   display: inline-block;
   padding-bottom: 25px;
-
 }
-
 
 .footer__bottom-copywrite{
   line-height: 28px;
@@ -78,7 +75,6 @@
     content: "";
     display: table;
   }
-
   &:after {
     clear: both;
   }
