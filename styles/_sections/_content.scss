@@ -81,3 +81,7 @@ $items: rows, grids, lines;
     }
   }
 }
+
+.product__list, .product__slideshow-thumbs, .product__desc-options, .product__rating-stars, .paginator__list{
+  list-style: none;
+}

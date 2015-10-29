@@ -1,0 +1,50 @@
+.paginator{
+  text-align: right;
+}
+.paginator__list{
+  @include inlineblock;
+}
+.paginator__item{
+  width: 26px;
+  height: 26px;
+  @include inlineblock;
+  @include border-radius(3px);
+  border: 1px solid #dee1e4;
+  position: relative;
+  overflow: hidden;
+}
+.paginator__link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: #fff;
+
+  &:hover{
+    background: #e0e0e0;
+  }
+}
+.paginator__mark{
+  @include absolute-center;
+  line-height: 26px;
+  text-align: center;
+  font-family: "open_sansbold";
+  font-size: 12px;
+  color: #7f7f7f;
+}
+$pagination-map: sprite-map('icons/paginator/*.png', $spacing: 70px);
+@each $item in (prev, next) {
+  .paginator__item_#{$item} {
+    .paginator__mark {
+      @include get-sprite($pagination-map, $item);
+    }
+
+  }
+}
+
+
+
+
+
