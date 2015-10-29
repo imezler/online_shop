@@ -1,25 +1,17 @@
-//@mixin get-sprite ($map, $icon) {
-//  $sprite-image: sprite-file($map, $icon);
-//  $sprite-map: sprite-url($map);
-//  $sprite-position: sprite-position($map, $icon);
-//
-//  background: $sprite-map $sprite-position no-repeat;
-//
-//  $sprite-height: image-height($sprite-image);
-//  $sprite-width: image-width($sprite-image);
-//
-//  height: $sprite-height;
-//  width: $sprite-width;
-//}
-$socials: vk, fb, tw;
-//$socials-map: sprite-map('icons/*.png', $spacing: 70px);
-//$icons-layout: horizontal;
-//
-//@each $social in $socials {
-//  .socials__link_#{$social} {
-//    @include get-sprite($socials-map, $social);
-//  }
-//}
+$socials: fb, vk, tw;
+$socials-map: sprite-map('icons/social/*.png', $spacing: 70px);
+
+@each $social in $socials {
+  .social__item_#{$social} {
+    .social_icon{
+      @include get-sprite($socials-map, $social);
+    }
+  }
+}
+
+
+
+
 
 $border: solid 1px black;
 html, body{
@@ -68,21 +60,36 @@ html, body{
 .social__item{
   display: block;
   margin-left: 15px;
-
 }
+
+
 .contact{
   float: right;
-        .contact__address{
-        font-family: "open_sansregular";
-        font-size: 14px;
-      }
-      .contact__phone{
-        font-family: "open_sanssemibold";
-        font-size: 18px;
-        margin-left: 106px;
-      }
-
 }
+.contact__address{
+  @include inlineblock;
+  color: #333;
+  font: 14px "open_sansregular";
+  &:before{
+    content: '';
+    @include get-sprite($misc_sprite, pin);
+    @include inlineblock;
+    margin-right: 9px;
+  }
+}
+.contact__phone{
+  @include inlineblock;
+  margin-left: 106px;
+  color: #333;
+  font: 18px "open_sanssemibold";
+  &:before{
+    content: '';
+    @include get-sprite($misc_sprite, phone);
+    @include inlineblock;
+    margin-right: 9px;
+  }
+}
+
 .clearfix{
   @include clearfix;
 }
@@ -125,10 +132,10 @@ html, body{
       width: 79px;
       box-sizing: border-box;
       color: #fff;
-      border: none;
+      border: 0 none;
       background: #ff6d30;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
       font: 16px "open_sanssemibold";
     }
 }

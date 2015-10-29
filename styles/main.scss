@@ -12,6 +12,8 @@
 
 //@import "_misc/adjustment";
 
+/* --------- misc icons sprite --------- */
+$misc_sprite: sprite-map('icons/_misc/*.png', $spacing:70px);
 /* --------- sections --------- */
 @import "_sections/_header";
 @import "_sections/_nav";
@@ -20,4 +22,5 @@
 @import "_sections/_sidebar";
 @import "_sections/_text";
 @import "_sections/_accordeon";
+@import "_sections/_breadcrumbs";
 

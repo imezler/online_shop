@@ -16,12 +16,13 @@ html(lang="ru-RU")
          include _common/_header
          +nav('nav', ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника'], 1)
          .container
-             .link-panel
-                ul.link-panel__list
-                    li.link-panel__item
-                        a(href="#" class="link-panel__link") Главная
-                    li.link-panel__item
-                        a(href="#" class="link-panel__link") Каталог
+             .breadcrumbs
+                ul.breadcrumbs__list
+                    - var items = ["Главная", "Каталог"]
+                    each item in items
+                        li(class="breadcrumbs__item" + ((item == "Каталог") ? ' active' : ''))
+                            a(href="#").breadcrumbs__link= item
+             h2.content-title Мобильные телефоны
              .main-container.clearfix
                  include _common/_sidebar
                  include _common/_content

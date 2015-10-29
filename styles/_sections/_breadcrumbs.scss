@@ -1,0 +1,35 @@
+.breadcrumbs{
+  display: block;
+}
+
+.breadcrumbs__item{
+  @include inlineblock;
+  font-size: 14px;
+
+  &:before{
+    content: '>';
+    @include inlineblock;
+  }
+  &:first-child:before{
+      display: none;
+  }
+  &.active{
+      .breadcrumbs__link{
+        text-decoration: underline;
+        color: #ff6600;
+      }
+  }
+}
+.breadcrumbs__list{
+  padding: 0;
+  list-style: none;
+  margin-bottom: 21px;
+}
+.breadcrumbs__link{
+  @include inlineblock;
+  text-decoration: none;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+}
