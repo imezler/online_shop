@@ -1003,23 +1003,56 @@ html, body {
   color: #333;
 }
 
-.sidebar__availability-header, .sidebar__brand-header, .sidebar__price-header, .sidebar__color-header, .sidebar__os-header {
-  font-family: "open_sanssemibold";
-  font-size: 16px;
-  color: #333;
+.filter__title {
   margin-top: 0;
-  margin-bottom: 15px;
+}
+
+.filter__list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter__item {
+  padding: 5px 26px 0 26px;
+  border-top: 1px solid #dee1e4;
   position: relative;
 }
-.sidebar__availability-header:after, .sidebar__brand-header:after, .sidebar__price-header:after, .sidebar__color-header:after, .sidebar__os-header:after {
+.filter__item:after {
   content: '';
   display: inline-block;
   background: url("/img/icons/up.png") no-repeat;
   height: 11px;
   width: 18px;
   position: absolute;
-  right: 5px;
-  top: 8px;
+  right: 15px;
+  top: 13px;
+}
+
+.filter__item.active {
+  display: block;
+}
+.filter__item.active .filter__title:after {
+  background: url("/img/icons/down.png") no-repeat;
+  height: 11px;
+  width: 18px;
+  display: block;
+}
+.filter__item.active .filter__content:after {
+  display: block;
+}
+
+.filter__title-link, .sidebar__brand-header, .sidebar__price-header, .sidebar__color-header, .sidebar__os-header {
+  text-decoration: none;
+  color: #333;
+  font-family: "open_sanssemibold";
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.filter__content {
+  display: none;
 }
 
 .sidebar__availability-list {
@@ -1174,22 +1207,26 @@ html, body {
 .sidebar__color-list {
   padding: 0;
   font-size: 0;
-  margin-left: -22px;
-  padding-right: 50px;
+  margin-left: -15px;
+  padding-right: 40px;
 }
 
 .sidebar__color-item {
   display: inline-block;
   list-style: none;
-  margin: 0 0 22px 22px;
+  margin: 0 0 10px 10px;
+  border: 3px solid transparent;
+}
+.sidebar__color-item:hover {
+  border-color: #ff6d30;
 }
 
 .sidebar__color-link {
   border: 1px solid #dee1e4;
   background: darkcyan;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   cursor: pointer;
 }
 

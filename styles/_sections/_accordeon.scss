@@ -11,12 +11,16 @@
   color: #333;
 
 }
-.sidebar__availability-header{
-  font-family: "open_sanssemibold";
-  font-size: 16px;
-  color: #333;
+.filter__title{
   margin-top: 0;
-  margin-bottom: 15px;
+}
+.filter__list{
+  padding: 0;
+  margin: 0;
+}
+.filter__item{
+  padding: 5px 26px 0 26px;
+  border-top: 1px solid #dee1e4;
   position: relative;
   &:after{
     content: '';
@@ -25,10 +29,36 @@
     height: 11px;
     width: 18px;
     position: absolute;
-    right: 5px;
-    top: 8px;
+    right: 15px;
+    top: 13px;
   }
 }
+.filter__item.active {
+  display: block;
+  .filter__title:after{
+    background: url('/img/icons/down.png') no-repeat;
+    height: 11px;
+    width: 18px;
+    display: block;
+  }
+  .filter__content:after{
+    display: block;
+  }
+
+}
+.filter__title-link{
+  text-decoration: none;
+  color: #333;
+  font-family: "open_sanssemibold";
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.filter__content{
+  display: none;
+}
+
 .sidebar__availability-list{
   display: block;
   list-style: none;
@@ -90,7 +120,7 @@
   @extend .sidebar__availability;
 }
 .sidebar__brand-header{
-  @extend .sidebar__availability-header;
+  @extend .filter__title-link;
 }
 .sidebar__brand-reset{
   @extend .sidebar__os-reset;
@@ -133,7 +163,7 @@
   @extend .sidebar__availability;
 }
 .sidebar__price-header{
-  @extend .sidebar__availability-header;
+  @extend .filter__title-link;
 }
 .sidebar__price-fields{
 
@@ -163,27 +193,32 @@
   @extend .sidebar__availability;
 }
 .sidebar__color-header{
-  @extend .sidebar__availability-header;
+  @extend .filter__title-link;
 }
 .sidebar__color-list{
   padding: 0;
   font-size: 0;
-  margin-left: -22px;
-  padding-right: 50px;
+  margin-left: -15px;
+  padding-right: 40px;
 }
 
 .sidebar__color-item{
   display: inline-block;
   list-style: none;
-  margin: 0 0 22px 22px;
+  margin: 0 0 10px 10px;
+  border: 3px solid transparent;
+  &:hover{
+    border-color: #ff6d30;
+  }
 }
 .sidebar__color-link{
   border: 1px solid #dee1e4;
   background: darkcyan;
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   cursor: pointer;
+
 }
 .sidebar__color-link__white{
   background-color: white;
@@ -225,7 +260,7 @@
   @extend .sidebar__availability;
 }
 .sidebar__os-header{
-  @extend .sidebar__availability-header;
+  @extend .filter__title-link;
 }
 .sidebar__os-list{
   @extend .sidebar__brand-list;

@@ -83,118 +83,130 @@
 							</div>
 						</div>
 						<form class="sidebar__accordeon">
-							<div class="sidebar__availability">
-								<h2 class="sidebar__availability-header">Наличие в магазинах</h2>
-								<ul class="sidebar__availability-list">
-									<li class="sidebar__availability-item">
-										<label class="sidebar__availability-label">Во всех магазинах
-											<input name="availability" type="radio" class="sidebar__availability-input">
-											<div class="sidebar__availability-elem"></div>
-										</label>
-									</li>
-									<li class="sidebar__availability-item">
-										<label class="sidebar__availability-label">В ближайшем ко мне магазине
-											<input name="availability" type="radio" class="sidebar__availability-input">
-											<div class="sidebar__availability-elem"></div>
-										</label>
-									</li>
-								</ul>
-							</div>
-							<div class="sidebar__brand">
-								<h2 class="sidebar__brand-header">Бренды</h2>
-								<ul class="sidebar__brand-list">
-									<li class="sidebar__brand-item">
-										<label class="sidebar__brand-label">Lenovo
-											<input type="checkbox" name="brand" class="sidebar__brand-input">
-											<div class="sidebar__brand-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__brand-item">
-										<label class="sidebar__brand-label">Apple
-											<input type="checkbox" name="brand" class="sidebar__brand-input">
-											<div class="sidebar__brand-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__brand-item">
-										<label class="sidebar__brand-label">Samsung
-											<input type="checkbox" name="brand" class="sidebar__brand-input">
-											<div class="sidebar__brand-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__brand-item">
-										<label class="sidebar__brand-label">Asus
-											<input type="checkbox" name="brand" class="sidebar__brand-input">
-											<div class="sidebar__brand-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__brand-item">
-										<label class="sidebar__brand-label">Motorola
-											<input type="checkbox" name="brand" class="sidebar__brand-input">
-											<div class="sidebar__brand-copy"></div>
-										</label>
-									</li>
-								</ul><a href="#" class="sidebar__brand-reset">Сбросить фильтр</a>
-							</div>
-							<div class="sidebar__price">
-								<h2 class="sidebar__price-header">Цена</h2>
-								<div class="sidebar__price-range">
-									<div class="sidebar__price-fields clearfix">
-										<div class="sidebar__price-fields-min"><span class="sidebar__price-fromTo">от</span>
-											<input type="text" value="0" id="min" class="sidebar__price-input">
-										</div>
-										<div class="sidebar__price-fields-max"><span class="sidebar__price-fromTo">до</span>
-											<input type="text" value="50000" id="max" class="sidebar__price-input">
+							<ul class="filter__list">
+								<div class="filter__item">
+									<h2 class="filter__title"><a href="#" class="filter__title-link">Наличие в магазинах</a></h2>
+									<div class="filter__content">
+										<ul class="sidebar__availability-list">
+											<li class="sidebar__availability-item">
+												<label class="sidebar__availability-label">Во всех магазинах
+													<input name="availability" type="radio" class="sidebar__availability-input">
+													<div class="sidebar__availability-elem"></div>
+												</label>
+											</li>
+											<li class="sidebar__availability-item">
+												<label class="sidebar__availability-label">В ближайшем ко мне магазине
+													<input name="availability" type="radio" class="sidebar__availability-input">
+													<div class="sidebar__availability-elem"></div>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="filter__item">
+									<h2 class="filter__title"><a href="#" class="filter__title-link">Бренды</a></h2>
+									<div class="filter__content">
+										<ul class="sidebar__brand-list">
+											<li class="sidebar__brand-item">
+												<label class="sidebar__brand-label">Lenovo
+													<input type="checkbox" name="brand" class="sidebar__brand-input">
+													<div class="sidebar__brand-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__brand-item">
+												<label class="sidebar__brand-label">Apple
+													<input type="checkbox" name="brand" class="sidebar__brand-input">
+													<div class="sidebar__brand-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__brand-item">
+												<label class="sidebar__brand-label">Samsung
+													<input type="checkbox" name="brand" class="sidebar__brand-input">
+													<div class="sidebar__brand-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__brand-item">
+												<label class="sidebar__brand-label">Asus
+													<input type="checkbox" name="brand" class="sidebar__brand-input">
+													<div class="sidebar__brand-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__brand-item">
+												<label class="sidebar__brand-label">Motorola
+													<input type="checkbox" name="brand" class="sidebar__brand-input">
+													<div class="sidebar__brand-copy"></div>
+												</label>
+											</li>
+										</ul><a href="#" class="sidebar__brand-reset">Сбросить фильтр</a>
+									</div>
+								</div>
+								<div class="filter__item">
+									<h2 class="filter__title"><a href="#" class="filter__title-link">Цена</a></h2>
+									<div class="filter__content">
+										<div class="sidebar__price-range">
+											<div class="sidebar__price-fields clearfix">
+												<div class="sidebar__price-fields-min"><span class="sidebar__price-fromTo">от</span>
+													<input type="text" value="0" id="min" class="sidebar__price-input">
+												</div>
+												<div class="sidebar__price-fields-max"><span class="sidebar__price-fromTo">до</span>
+													<input type="text" value="50000" id="max" class="sidebar__price-input">
+												</div>
+											</div>
+											<div id="range_slider" class="sidebar__price-slider"><span class="ui-slider-handle ui-state-default ui-corner-all"></span><span class="ui-slider-handle ui-state-default ui-corner-all"></span></div>
 										</div>
 									</div>
-									<div id="range_slider" class="sidebar__price-slider"><span class="ui-slider-handle ui-state-default ui-corner-all"></span><span class="ui-slider-handle ui-state-default ui-corner-all"></span></div>
 								</div>
-							</div>
-							<div class="sidebar__color">
-								<h2 class="sidebar__color-header">Цвет</h2>
-								<ul class="sidebar__color-list">
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__white">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__gray">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__black">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__darkgreen">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__red">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__yellow">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__orange">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__green">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__blue">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__violet">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__pink">color</a></li>
-									<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__darkred">color</a></li>
-								</ul>
-							</div>
-							<div class="sidebar__os">
-								<h2 class="sidebar__os-header">Операционные системы</h2>
-								<ul class="sidebar__os-list">
-									<li class="sidebar__os-item">
-										<label class="sidebar__os-label">Android
-											<input type="checkbox" name="os" class="sidebar__os-input">
-											<div class="sidebar__os-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__os-item">
-										<label class="sidebar__os-label">Windows Mobile
-											<input type="checkbox" name="os" class="sidebar__os-input">
-											<div class="sidebar__os-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__os-item">
-										<label class="sidebar__os-label">Symbian
-											<input type="checkbox" name="os" class="sidebar__os-input">
-											<div class="sidebar__os-copy"></div>
-										</label>
-									</li>
-									<li class="sidebar__os-item">
-										<label class="sidebar__os-label">Custom
-											<input type="checkbox" name="os" class="sidebar__os-input">
-											<div class="sidebar__os-copy"></div>
-										</label>
-									</li>
-								</ul><a href="#" class="sidebar__os-reset">Сбросить фильтр</a>
-							</div>
+								<div class="filter__item">
+									<h2 class="filter__title"><a href="#" class="filter__title-link">Цвет</a></h2>
+									<div class="filter__content">
+										<ul class="sidebar__color-list">
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__white">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__gray">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__black">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__darkgreen">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__red">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__yellow">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__orange">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__green">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__blue">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__violet">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__pink">color</a></li>
+											<li class="sidebar__color-item"><a href="#" class="sidebar__color-link sidebar__color-link__darkred">color</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="filter__item">
+									<h2 class="filter__title"><a href="#" class="filter__title-link">Операционные системы</a></h2>
+									<div class="filter__content">
+										<ul class="sidebar__os-list">
+											<li class="sidebar__os-item">
+												<label class="sidebar__os-label">Android
+													<input type="checkbox" name="os" class="sidebar__os-input">
+													<div class="sidebar__os-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__os-item">
+												<label class="sidebar__os-label">Windows Mobile
+													<input type="checkbox" name="os" class="sidebar__os-input">
+													<div class="sidebar__os-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__os-item">
+												<label class="sidebar__os-label">Symbian
+													<input type="checkbox" name="os" class="sidebar__os-input">
+													<div class="sidebar__os-copy"></div>
+												</label>
+											</li>
+											<li class="sidebar__os-item">
+												<label class="sidebar__os-label">Custom
+													<input type="checkbox" name="os" class="sidebar__os-input">
+													<div class="sidebar__os-copy"></div>
+												</label>
+											</li>
+										</ul><a href="#" class="sidebar__os-reset">Сбросить фильтр</a>
+									</div>
+								</div>
+							</ul>
 						</form>
 					</div>
 					<div class="main-content">
@@ -220,7 +232,7 @@
 							</div>
 						</div>
 						<div class="main-content__bottom">
-							<ul class="product__list">
+							<ul id="products-list" class="product__list">
 								<li class="product__item">
 									<div class="product__item-inner">
 										<div class="product__left">
