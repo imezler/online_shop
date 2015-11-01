@@ -88,7 +88,7 @@
   @include inlineblock;
   font-size: 12px;
   line-height: 16px;
-  color: black;
+  color: #333;
   font-family: "open_sanssemibold";
 }
 
@@ -196,7 +196,7 @@ $stars-map:sprite-map('icons/stars/*.png', $spacing: 70px);
   }
 }
 .product__price{
-  color: black;
+  color: #333;
   font-size: 20px;
   line-height: 22px;
   font-family: "open_sanssemibold";
