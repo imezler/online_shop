@@ -21,6 +21,7 @@
 }
 .main-content__select{
   @include inlineblock;
+  font: 14px "open_sansregular";
 }
 .main-content__top-left{
   float: left;
