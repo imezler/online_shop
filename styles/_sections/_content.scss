@@ -80,6 +80,14 @@ $items: rows, grids, lines;
         @include get-sprite($view-map, $hover-icon);
       }
     }
+
+    &.active{
+      $hover-icon: $item + '-hover';
+
+      .main-content__view-icon{
+        @include get-sprite($view-map, $hover-icon);
+      }
+    }
   }
 }
 
