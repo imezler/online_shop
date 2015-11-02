@@ -39,7 +39,7 @@ var ViewStateChange = (function(){
 
     return {
         init: function() {
-            $("main-content__view-link").on("click", function(e) {
+            $(".main-content__view-link").on("click", function(e) {
                 e.preventDefault();
                 _changeState($(this));
             });
@@ -85,15 +85,14 @@ $(document).ready(function(){
     if($(".sidebar__list").length) {
         Accordion.init();
     }
-    ViewStateChange.init();
 
-
-    if ($(".main-content__select").length) {
+        if ($(".main-content__select").length) {
         $(".main-content__select").select2({
             minimumResultsForSearch: Infinity
         });
     }
 
+    ViewStateChange.init();
 
 
     $(".sidebar__reset").on("click", function(e) {
