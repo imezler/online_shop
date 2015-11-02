@@ -1020,7 +1020,7 @@ html, body {
 .filter__item:after {
   content: '';
   display: inline-block;
-  background: url("/img/icons/up.png") no-repeat;
+  background: url("/img/icons/down.png") no-repeat;
   height: 11px;
   width: 18px;
   position: absolute;
@@ -1032,13 +1032,13 @@ html, body {
   display: block;
 }
 .filter__item.active .filter__title:after {
-  background: url("/img/icons/down.png") no-repeat;
+  background: url("/img/icons/up.png") no-repeat;
   height: 11px;
   width: 18px;
-  display: block;
 }
-.filter__item.active .filter__content:after {
+.filter__item.active .filter__content {
   display: block;
+  margin-bottom: 20px;
 }
 
 .filter__title-link, .sidebar__brand-header, .sidebar__price-header, .sidebar__color-header, .sidebar__os-header {
@@ -1278,7 +1278,7 @@ html, body {
   background-color: darkred;
 }
 
-.sidebar__os-reset, .sidebar__brand-reset {
+.sidebar__reset {
   color: #5db2fc;
   font: 14px "open_sansregular", sans-serif;
   text-decoration: underline;

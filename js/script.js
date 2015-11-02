@@ -82,8 +82,8 @@ var Accordion = (function()  {
 
 $(document).ready(function(){
 
-    if($(".filter").length) {
-        Accordeon.init();
+    if($(".sidebar__list").length) {
+        Accordion.init();
     }
     ViewStateChange.init();
 
@@ -96,5 +96,16 @@ $(document).ready(function(){
 
 
 
+    $(".sidebar__reset").on("click", function(e) {
+        e.preventDefault();
+
+        var $this = $(this),
+            container = $this.closest(".filter__item"),
+            checkboxes = container.find("input:checkbox");
+
+        checkboxes.each(function() {
+            $(this).prop('checked', false);
+        });
+    });
 });
 

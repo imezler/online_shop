@@ -25,7 +25,7 @@
   &:after{
     content: '';
     display: inline-block;
-    background: url('/img/icons/up.png') no-repeat;
+    background: url('/img/icons/down.png') no-repeat;
     height: 11px;
     width: 18px;
     position: absolute;
@@ -36,13 +36,13 @@
 .filter__item.active {
   display: block;
   .filter__title:after{
-    background: url('/img/icons/down.png') no-repeat;
+    background: url('/img/icons/up.png') no-repeat;
     height: 11px;
     width: 18px;
-    display: block;
   }
-  .filter__content:after{
+  .filter__content{
     display: block;
+    margin-bottom: 20px;
   }
 
 }
@@ -82,7 +82,6 @@
   padding-left: 30px;
   cursor: pointer;
 }
-
 .sidebar__availability-elem{
   border: 3px solid #dee1e4;
   position: absolute;
@@ -121,9 +120,6 @@
 }
 .sidebar__brand-header{
   @extend .filter__title-link;
-}
-.sidebar__brand-reset{
-  @extend .sidebar__os-reset;
 }
 .sidebar__brand-list{
   padding: 0;
@@ -277,7 +273,7 @@
 .sidebar__os-copy{
   @extend .sidebar__brand-copy;
 }
-.sidebar__os-reset{
+.sidebar__reset{
   color: #5db2fc;
   font: 14px "open_sansregular", sans-serif;
   text-decoration: underline;
