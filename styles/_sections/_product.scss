@@ -6,13 +6,21 @@
   border: 1px solid #dee1e4;
   @include border-radius(7px);
   overflow: hidden;
-  background: #fff;
+  background: #fbfbfb;
+  padding: 0;
+}
+.product__list_rows{
+  padding: 0;
 }
 .product__item{
   border-top: 1px solid #dee1e4;
 
   &:first-child{
     border-top: 0 none;
+  }
+  &:hover{
+    z-index: 2;
+    box-shadow: 0 3px 6px 0.5px rgba(118, 118, 118, 0.75);
   }
 }
 .product__item-inner{

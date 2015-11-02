@@ -106,5 +106,9 @@ $(document).ready(function(){
             $(this).prop('checked', false);
         });
     });
+
+    $(".bottom-text__column").columnize({
+        width: 500
+    });
 });
 

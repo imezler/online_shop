@@ -15,5 +15,8 @@
     "bower",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery.columnizer": "~1.6.2"
+  }
 }
